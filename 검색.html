@@ -23,8 +23,6 @@
     }
     #gk a {
         padding-left: 20px;
-        text-decoration: none;
-        color: black;
         font-size: 20px;
     }
     #article h3 {
@@ -51,6 +49,17 @@
     }
 </style>
 <body>
+        <input id="night_day" type="button" value="night" onclick="
+        if(document.querySelector('#night_day').value === 'night'){
+          document.querySelector('body').style.backgroundColor = 'black';
+          document.querySelector('body').style.color = 'white';
+          document.querySelector('#night_day').value = 'day';
+        } else {
+          document.querySelector('body').style.backgroundColor = 'white';
+          document.querySelector('body').style.color = 'black';
+          document.querySelector('#night_day').value = 'night';
+        }
+      ">
         <h1><a href="메인화면.html">사이트들 모음집</a></h1>
     <div id="gk">
         <ol>
