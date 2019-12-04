@@ -1,78 +1,12 @@
 <!DOCTYPE html>
 <head>
     <title>사이트 모음집</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="1.css">
+    <script src="colors.js"></script>
 </head>
-<style>
-    body {
-        margin: 0;
-        background-image: url(캡처.jpg);
-        background-position: left-top;
-        background-repeat: no-repeat;
-        background-size: 82px;
-    }
-    h1 {
-        text-align: center;
-        color: black;
-        border-bottom:gray 2px solid;
-        margin: 0;
-        padding: 20px;
-    }
-    #gk {
-        display: grid;
-        grid-template-columns: 200px 1fr;
-    }
-    #gk a {
-        padding-left: 20px;
-        font-size: 20px;
-    }
-    #article h3 {
-        font-size: 50px;
-    }
-    #gk ol {
-        border-right: gray 2px solid;
-        margin: 0;
-    }
-    #article {
-        padding-left: 20px;
-    }
-    a {
-        text-decoration: none;
-        color: blue;
-    }
-    @media(max-width:500px){
-        h1 {
-        border-bottom:none;}
-        #gk ol {
-        border-right: none;}
-        #gk {
-        display: block;}
-    }
-</style>
 <body>
-        <input id="night_day" type="button" value="night" onclick="
-        if(document.querySelector('#night_day').value === 'night'){
-          document.querySelector('body').style.backgroundColor = 'black';
-          document.querySelector('body').style.color = 'white';
-          document.querySelector('#night_day').value = 'day';
-
-          var alist = document.querySelectorAll('a');
-            var i = 0;
-            while(i < alist.length){
-            alist[i].style.color = 'powderblue';
-            var i = i + 1;
-            }
-        } else {
-          document.querySelector('body').style.backgroundColor = 'white';
-          document.querySelector('body').style.color = 'black';
-          document.querySelector('#night_day').value = 'night';
-          var alist = document.querySelectorAll('a');
-          var i = 0;
-          while(i < alist.length){
-          alist[i].style.color = 'blue';
-          var i = i + 1;
-                }
-        }
-      ">
+        <input id="night_day" type="button" value="night" onclick="nightDayHandler(this)">
     <h1><a href="메인화면.html">사이트들 모음집</a></h1>
     <div id="gk">
         <ol>

@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    background-image: url(캡처.jpg);
+    background-position: left-top;
+    background-repeat: no-repeat;
+    background-size: 82px;
+}
+h1 {
+    text-align: center;
+    color: black;
+    border-bottom:gray 2px solid;
+    margin: 0;
+    padding: 20px;
+}
+#gk {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+#gk a {
+    padding-left: 20px;
+    font-size: 20px;
+}
+#article h3 {
+    font-size: 50px;
+}
+#gk ol {
+    border-right: gray 2px solid;
+    margin: 0;
+}
+#article {
+    padding-left: 20px;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+#article ul {
+    font-size: 20px;
+}
+@media(max-width:500px){
+    h1 {
+    border-bottom:none;}
+    #gk ol {
+    border-right: none;}
+    #gk {
+    display: block;}
+}
